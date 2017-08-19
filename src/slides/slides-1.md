@@ -1,0 +1,355 @@
+class: center, middle, vertigo
+
+# Un exemple de convergence de l'analyse et de l'informatique musicale.
+## Enrichir le projet Analyses par le Web Audio
+
+<hr>
+
+Alain Bonardi - CICM / Musidanse / Université Paris 8 et Ircam <br>
+Guillaume Pellerin - Centre de Ressources / APM Ircam <br>
+Emilie Zawadzki - Centre de Ressources Ircam
+
+### JIM 2017 - 19/05/2017 - IRCAM
+<img src="img/jim_horiz_blanc_1.png" height="100px" />
+
+---
+class: vertigo, tight
+
+# "Décrire l’audible dans ses multiples dimensions à travers l’écrit”
+
+Tel est le but assigné par Daniel Teruggi à l’analyse au sens large, y compris l’analyse de la musique acousmatique (Delalande, Analyser la musique, pourquoi, comment ?)
+
+Difficultés à analyser les œuvres faisant appel aux technologies, en particulier les œuvres mixtes (temps réel ou sur support fixé)
+
+- Documents et inscriptions multiples :
+    - partitions
+    - codes informatiques
+    - schémas
+    - patchs
+    - enregistrements
+    - ...
+
+- Paradigmes combinés de la partition et de l’instrument sous diverses formes et supports (Composed Instruments, Battier & Schnell, 2002)
+
+
+---
+class: vertigo
+
+# Analyser une œuvre mixte temps réel en faisant appel à des programmes informatiques
+
+- En complément du texte écrit
+- Approche ‘active’ de l’analyse (cf. ‘active listening’)
+  - Appropriation par la manipulation sur support informatique
+  - Mobiliser les trois fonctions de l’ordinateur
+        - Comme processeur de calcul : synthèses et transformations sonores
+        - Comme mémoire : stockage de fichiers multimédia
+        - Comme interface : jouabilité du dispositif, qui devient “instrument”
+
+
+---
+class: vertigo, tight
+
+# Le projet Analyses à l’Ircam
+
+http://brahms.ircam.fr/analyses/
+
+--
+
+.pull-left[
+- Documentations technico-musicales de référence sur des œuvres réalisées à l’Ircam ou en connexion directe avec cet institut
+- Analyses multimédia
+- Mise en relation avec l’ensemble des bases Ircam : Brahms, Sidney
+- Objectifs
+
+    - Faire connaître les œuvres à un public plus large
+    - Montrer la relation entre l’idée musicale et les technologies utilisées
+    - Identifier les nouveaux éléments du vocabulaire musicale qui émergent à travers ces œuvres
+    - Offrir un support d’information aux interprètes
+]
+
+.pull-right[
+.right[![image](img/brahms_home.png)]
+]
+
+---
+class: vertigo, tight
+
+.pull-left[
+
+# Exemple de description
+
+http://brahms.ircam.fr/analyses/metallics/
+
+
+- Description
+
+    - du principe de l’harmoniseur
+    - du rôle de l’harmoniseur dans l’analyse de Metallics de Yan Maresz, notamment à l’événement 44 de la partition
+
+- Mélange de texte, d’images fixes et de sons
+]
+
+.pull-right[
+.right[![image-85](img/mettalics.png)]
+]
+
+---
+class: center, middle, vertigo
+
+# Manipuler pour comprendre
+
+*Bye bye applets Java, Flash, etc ! Welcome HTML5 !!*
+
+---
+class: vertigo, tight
+
+# Exemples de simulations en sciences physiques
+
+.pull-left[
+## PHET : simulations interactives en mathématiques et sciences (HTML5)
+
+https://phet.colorado.edu/fr/
+]
+
+.pull-right[
+.right[![image-85](img/phet.png)]
+]
+
+---
+class: vertigo, tight
+
+# Exemples de simulations en sciences physiques
+
+.pull-left[
+## Physion : accès au code et écriture de scripts Javascript
+
+http://physion.net/
+]
+
+.pull-right[
+.right[![image-85](img/physion.png)]
+]
+
+
+---
+class: vertigo
+
+# Manipulation de contenus sonores
+
+.pull-left[
+## Projet TaCEM, Université de Huddersfield, équipe de Michael Clarke
+
+- Analyses interactives fondées sur l’écoute de sons extraits
+- Exemple de Wind Chimes de Denis Smalley
+- Zoom d’écoute : sélection et filtrage d’un son pré-défini
+- Parcours d’une taxonomie de fragments sonores significatifs dans l’œuvre
+- Variation des vitesses de lecture des fragments / celles choisies par le compositeur
+- Tutorial 2 / Portraits polychromes
+
+]
+
+.pull-right[
+.right[![image-85](img/tacem.png)]
+]
+
+
+
+---
+class: vertigo
+
+# Manipulations musicales génératives
+
+.pull-left[
+## JavaScript Systems Music
+
+Reconstruction d’œuvres de Steve Reich et Brian Eno
+
+http://teropa.info/blog/2016/07/28/javascript-systems-music.html
+
+]
+
+.pull-right[
+.right[![image-85](img/reich.png)]
+]
+
+
+
+---
+class: vertigo
+
+.pull-left[
+# Web Audio Resources
+
+a list of curated resources related to the Web audio API :
+
+https://github.com/alemangui/web-audio-resources
+
+]
+
+.pull-right[
+![image-85](img/web-audio-resources.jpg)
+]
+
+---
+class: vertigo
+
+.pull-left[
+# Pizzicato
+
+A web audio Javascript library
+
+https://alemangui.github.io/pizzicato/
+]
+
+.pull-right[
+.center[![image-85](https://alemangui.github.io/pizzicato//img/logo.svg)]
+
+]
+
+---
+class: center, middle, vertigo
+
+# Vers un harmoniseur interactif Web Audio
+
+
+---
+class: vertigo, tight
+
+.pull-left[
+
+# Manipulation ⇔ écoute
+
+## Prise en main d’un traitement sonore : l’harmoniseur
+
+- Enrichissement de l’analyse de En Echo de Manoury (1993)
+- Voix et temps réel
+- Analyse en cours de finalisation
+- Point de départ : version 2010 du patch Max de l’œuvre
+- Sous-patch d’harmoniseur isolé
+- 4 paramètres de pilotage : étendue de la transposition (en midicents), largeur de la fenêtre (de 0 à 127), délai temporel (en millisecondes), niveau de sortie
+- Pas de zoom dans le son ou de reconstruction générative ici
+
+]
+
+.pull-right[
+.right[![image-60](img/en_echo.png)]
+]
+
+
+---
+class: vertigo, tight
+
+.pull-left[
+# Interface de manipulation
+
+### Valeurs par défaut issues d’un état particulier dans l’œuvre jugé intéressant
+
+- 4ème section “Mea Lux”, Chiffres 19 et 20
+- Épaississement de la voix par les 4 harmonizers (transpositions micro-tonales)
+
+### Réduction de l’espace des paramètres pour ouvrir à la manipulation par le lecteur
+
+- Au départ 16 paramètres (4 par harmonizer)
+    - 6 paramètres
+    - 4 transpositions entre -100 et +100 midi-cents
+]
+
+.pull-right[
+.right[![image-85](img/mea_lux.png)]
+.right[![image-85](img/harmo_pd.png)]
+]
+
+
+
+
+---
+class: vertigo, tight
+
+.pull-left[
+# Demonstration Harmonizeur Web Audio
+
+[link](https://ircam-web.github.io/analyses-webaudio-effects/EnEchoHarmonizer/enEcho4harmonizer.html)
+
+[code](https://github.com/Ircam-Web/analyses-webaudio-effects)
+
+```
+//--------------------------------------------------------------------------------------//
+// HARMONIZER FAUST CODE
+// Translated from the Max harmonizers used in En Echo by Philippe Manoury
+// Author : Alain Bonardi
+// January 2017
+//--------------------------------------------------------------------------------------//
+import("stdfaust.lib");
+
+//--------------------------------------------------------------------------------------//
+// DEFINITION OF CONTROLS
+//--------------------------------------------------------------------------------------//
+//transpositions in midicents between -2400 and 2400//
+//initialized with Manoury's values in En Echo in the 4th piece Mea Lux at events 19 and 20
+//the ambitus is -100 to 100 (one half-tone under, one half-tone above)
+transposition1 = hslider("transposition1", 30, -100, 100, 1);
+transposition2 = hslider("transposition2", 15, -100, 100, 1);
+transposition3 = hslider("transposition3", -15, -100, 100, 1);
+transposition4 = hslider("transposition4", -30, -100, 100, 1);
+
+//harmonizer window between 0 and 127//
+//initialized with Manoury's value of 50 in En Echo in the 4th piece Mea Lux at events 19 and 20//
+//with the lineDrive the actual value is 19.7032
+```
+]
+
+.pull-right[
+<iframe id="frame" src="https://ircam-web.github.io/analyses-webaudio-effects/EnEchoHarmonizer/enEcho4harmonizer.html" scrolling="auto" frameborder="0" allowfullscreen="" width="100%">
+]
+
+???
+Latence
+
+
+---
+class: vertigo
+
+# Faust ?
+
+### un langage de programmation fonctionnel dédié aux traitements audio temps-réel
+
+- open source (GRAME)
+- compilation vers de très nombreux environnements
+- online compiler : http://faust.grame.fr/onlinecompiler/
+- playground : http://faust.grame.fr/faustplayground/
+
+## Questions / verrous
+
+- maîtrise la latence dans le cadre faust2webaudio (Script Processor)
+- gestion des cartes audio
+- export des paramètres / presets
+
+
+---
+class: vertigo
+
+# Conclusion
+
+### Mise à disposition d’un harmoniseur modélisé depuis une œuvre mixte
+
+- Absence d’installation spécifique : un navigateur suffit
+- Mise en œuvre sur les sons du compositeur ou au micro
+- Code Faust efficace et multi-cibles
+- Code modifiable et réutilisable
+
+## Développements futurs
+
+- Personnalisation de l’interface, pour l’instant générée automatiquement
+- Bibliothèque de modules de traitement => thésaurus
+- Ensemble de presets propres aux œuvres et aux utilisateurs
+- Nouvelle conception des analyses
+- Associant modules manipulables et conteneurs temporels universels
+
+---
+class: center, middle, vertigo
+
+# Merci !
+
+<hr>
+### JIM 2017 - 19/05/2017 - IRCAM
+<img src="img/jim_horiz_blanc_1.png" height="100px" />
