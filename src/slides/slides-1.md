@@ -1,57 +1,59 @@
 class: center, middle, vertigo
 
-# Un exemple de convergence de l'analyse et de l'informatique musicale.
-## Enrichir le projet Analyses par le Web Audio
+# WASABI
+
+##a two million song database project with audio and cultural metadata <br> plus WebAudio enhanced client applications
 
 <hr>
 
-Alain Bonardi - CICM / Musidanse / Université Paris 8 et Ircam <br>
-Guillaume Pellerin - Centre de Ressources / APM Ircam <br>
-Emilie Zawadzki - Centre de Ressources Ircam
+Michel Buffa - INRIA / Wimmics<br>
+Guillaume Pellerin - IRCAM<br>
 
-### JIM 2017 - 19/05/2017 - IRCAM
+### WAC 2017 - 22/08/2017 - QMUL
 <img src="img/jim_horiz_blanc_1.png" height="100px" />
-
----
-class: vertigo, tight
-
-# "Décrire l’audible dans ses multiples dimensions à travers l’écrit”
-
-Tel est le but assigné par Daniel Teruggi à l’analyse au sens large, y compris l’analyse de la musique acousmatique (Delalande, Analyser la musique, pourquoi, comment ?)
-
-Difficultés à analyser les œuvres faisant appel aux technologies, en particulier les œuvres mixtes (temps réel ou sur support fixé)
-
-- Documents et inscriptions multiples :
-    - partitions
-    - codes informatiques
-    - schémas
-    - patchs
-    - enregistrements
-    - ...
-
-- Paradigmes combinés de la partition et de l’instrument sous diverses formes et supports (Composed Instruments, Battier & Schnell, 2002)
-
 
 ---
 class: vertigo
 
-# Analyser une œuvre mixte temps réel en faisant appel à des programmes informatiques
+#WASABI project
 
-- En complément du texte écrit
-- Approche ‘active’ de l’analyse (cf. ‘active listening’)
-  - Appropriation par la manipulation sur support informatique
-  - Mobiliser les trois fonctions de l’ordinateur
-        - Comme processeur de calcul : synthèses et transformations sonores
-        - Comme mémoire : stockage de fichiers multimédia
-        - Comme interface : jouabilité du dispositif, qui devient “instrument”
+##Web Audio and SemAntic in the Browser for Indexation
 
+- 42 months from 2016 Q4 to april 2020 Q2
+- 750 k€ project granted by the french Research National Agency
+
+## Partners
+
+- INRIA (I3S)
+- IRCAM (MIR + Musicology + Library)
+- Deezer R&D
+- Radio France Library
+- Parisson
+
+---
+class: vertigo
+
+#WASABI
+
+##Objectives
+
+- Propose some new methodologies to index music in the web and audio context
+- Link semantics (linked metadata) + acoustics (MIR data) + machine learning
+- Develop and publish some open source web services through original APIs
+
+##Use cases
+
+- augmented web music browsing
+- data journalism
+- music composing through big data
+- plagiarism or influence detection
+
+*wasabi website link*
 
 ---
 class: vertigo, tight
 
-# Le projet Analyses à l’Ircam
-
-http://brahms.ircam.fr/analyses/
+#Semantic web
 
 --
 
@@ -94,25 +96,62 @@ http://brahms.ircam.fr/analyses/metallics/
 ]
 
 ---
-class: center, middle, vertigo
+class: vertigo, tight
 
-# Manipuler pour comprendre
+#TimeSide
 
-*Bye bye applets Java, Flash, etc ! Welcome HTML5 !!*
+##audio processing framework for the web
+
+https://github.com/Parisson/TimeSide
+
+##Features
+
+- Do asynchronous and fast audio processing with Python,
+- Decode audio frames from any audio or video media format into numpy arrays,
+- Analyze audio content with some state-of-the-art audio feature extraction libraries like Aubio, Yaafe, VAMP and Essentia as well as some pure python processors
+- Visualize sounds with various fancy waveforms, spectrograms and other cool graphers,
+- Transcode audio data in various media formats and stream them through web apps,
+- Serialize feature analysis data through various portable formats,
+- Playback and interact on demand through a smart high-level HTML5 extensible player,
+- Index, tag and annotate audio archives with semantic metadata (see Telemeta which embed TimeSide).
+- Deploy and scale your own audio processing engine through any infrastructure
+
 
 ---
 class: vertigo, tight
 
-# Exemples de simulations en sciences physiques
+#TimeSide
+
+##audio processing framework for the web
+
+https://github.com/Parisson/TimeSide
+
+##Use cases
+
+- Scaled audio computing (filtering, machine learning, etc)
+- Web audio visualization
+- Audio process prototyping
+- Realtime and on-demand transcoding and streaming over the web
+- Automatic segmentation and labelling synchronized with audio events
+- Audio analysis web service
+
+---
+class: vertigo, tight
+
+#TimeSide - examples
 
 .pull-left[
-## PHET : simulations interactives en mathématiques et sciences (HTML5)
 
-https://phet.colorado.edu/fr/
+##Telemeta
+
+###Collaborative multimedia asset management system
+
+https://github.com/Parisson/Telemeta
+
 ]
 
 .pull-right[
-.right[![image-85](img/phet.png)]
+.right[![image-60](img/telemeta.png)]
 ]
 
 ---
@@ -299,7 +338,9 @@ transposition4 = hslider("transposition4", -30, -100, 100, 1);
 ]
 
 .pull-right[
+<!--
 <iframe id="frame" src="https://ircam-web.github.io/analyses-webaudio-effects/EnEchoHarmonizer/enEcho4harmonizer.html" scrolling="auto" frameborder="0" allowfullscreen="" width="100%">
+-->
 ]
 
 ???
