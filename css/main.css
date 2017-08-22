@@ -96,6 +96,18 @@ code
 
     width: 47%;
 }
+.pull-left-30
+{
+    float: left;
+
+    width: 27%;
+}
+.pull-right-70
+{
+    float: right;
+
+    width: 67%;
+}
 .pull-right ~ p
 {
     clear: both;
@@ -209,6 +221,13 @@ code
 img[alt=image]
 {
     width: 100%;
+}
+img[alt=image-wh-bg]
+{
+    width: 100%;
+    padding-left: 1em;
+
+    background-color: #fff;
 }
 img[alt=image-85]
 {
