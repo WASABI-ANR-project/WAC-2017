@@ -65,38 +65,22 @@ class: vertigo, tight
 
 #TimeSide
 
-##audio processing framework for the web
-
-https://github.com/Parisson/TimeSide
-
-##Features
-
-- **Decode** audio frames from any audio or video media format into numpy arrays,
-- **Analyze** audio content with audio feature extraction libraries (Aubio, Yaafe, VAMP, Essentia, etc..) as well as some pure python processors
-- **Visualize** sounds and analysis data
-- **Transcode** audio data in various media formats and stream them through web apps,
-- **Serialize** MIR data through various portable formats,
-- **Playback** and **interact** on demand through a HTML5 extensible player,
-- **Index**, **tag** and **annotate** audio archives with semantic metadata
-- **Deploy** and **scale** a **Restful API** as an audio processing service
-
----
-class: vertigo, tight
-
-#TimeSide
-
-##audio processing framework for the web
+##open audio processing framework for the web
 
 https://github.com/Parisson/TimeSide
 
 ##Use cases
 
-- Scaled audio computing (filtering, machine learning, etc)
-- Web audio visualization
+- Scaled audio processing (filtering, transcoding, machine learning, etc...)
 - Audio process prototyping
-- Realtime and on-demand transcoding and streaming over the web
+- Audio dynamic visualization
 - Automatic segmentation and labelling synchronized with audio events
-- Audio analysis web service
+- Collaborative annotation
+- Audio web services
+
+##Features and examples
+
+DEMO this afternoon...
 
 ---
 class: vertigo
@@ -182,6 +166,14 @@ $ git clone --recursive https://github.com/Parisson/TimeSide.git
 $ docker-compose up
 $ docker-compose scale worker 1024
 ```
+
+```python
+$ docker-compose run app python manage.py shell
+>>> from timeside.models import Task
+>>> tasks = Task.objects.all()
+>>> for task in tasks:
+>>>     task.run()
+```
 ]
 
 ---
@@ -210,7 +202,7 @@ https://github.com/DIADEMS/timeside-diadems
 .pull-right[
 - Aubio (Temporal, Pitch, etc)
 - Yaafe (graph oriented)
-- **VampSimpleHost**
+- **VampPyHost**
 - **Essentia bridge**
 - **Speech detection**
 - **Music detection**
@@ -276,7 +268,6 @@ class: vertigo
 .right[![image](img/ui-telemeta-grand-2_1.png)]
 ]
 
-
 ---
 class: vertigo
 #TimeSide integration
@@ -307,27 +298,12 @@ class: vertigo
 
 ###Application expected results (using WebAudio extensively)
 
-- A full web app to browse multidimensional data
+- A full web app to browse multidimensional data (I3S)
 - Collaborative Web tools for automatic, semi-automatic and manual audio indexing (Parisson, IRCAM)
-- Mixing table / multitrack player, chainable high-level audio effects, guitar amp simulators, interactive audio music browser
-- Search engine driven by audio (midi input, audio extracts)
+- Mixing table / multitrack player, chainable high-level audio effects, guitar amp simulators, interactive audio music browser (I3S)
+- Search engine driven by audio (midi input, audio extracts) (IRCAM, I3S)
+- improving production metadata access and recommandation (Deezer, Radio France)
 - Interactive tutorials (music schools)
-
----
-class: vertigo
-#WASABI
-
-##Innovative user experience / use cases
-
-###Targets: composers, musicologists, data journalists, music schools, music engineer schools, streaming services.
-
-###Examples
-
-- Journalism : David Bowie network data review (Radio France)
-- Musicology : demixed contemporary music annotation (IRCAM)
-- Music composition : realtime granular synthesis through historical data (IRCAM)
-- Music browsing : improving production metadata access and recommandation (Deezer)
-- Teaching : replay Michel Buffa greatest songs!
 
 ---
 class: vertigo
