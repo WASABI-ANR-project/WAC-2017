@@ -10,7 +10,7 @@ Michel Buffa - INRIA / Wimmics<br>
 Guillaume Pellerin - IRCAM<br>
 
 ### WAC 2017 - 22/08/2017 - QMUL
-<img src="img/jim_horiz_blanc_1.png" height="100px" />
+<img src="img/wacv3_b1.png" height="200px" />
 
 ---
 class: vertigo
